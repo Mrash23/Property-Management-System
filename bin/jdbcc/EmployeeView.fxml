@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="500.0" minWidth="491.0" prefHeight="500.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jdbcc.EmployeeViewController">
+   <children>
+      <ComboBox fx:id="comboid" editable="true" layoutX="140.0" layoutY="28.0" prefWidth="150.0" />
+      <TextField fx:id="txtnaam" layoutX="140.0" layoutY="96.0" />
+      <TextField fx:id="txtsalary" layoutX="141.0" layoutY="154.0" />
+      <Label layoutX="52.0" layoutY="32.0" text="ID" />
+      <Label layoutX="50.0" layoutY="100.0" text="Name" />
+      <Label layoutX="52.0" layoutY="158.0" text="Salary" />
+      <Button layoutX="66.0" layoutY="292.0" mnemonicParsing="false" onAction="#doSave" text="Save" />
+      <Button layoutX="135.0" layoutY="292.0" mnemonicParsing="false" onAction="#doUpdate" text="Update" />
+      <Button layoutX="216.0" layoutY="292.0" mnemonicParsing="false" onAction="#doDelete" text="Delete" />
+      <Button layoutX="285.0" layoutY="292.0" mnemonicParsing="false" onAction="#doShowAll" text="Show All" />
+      <Button layoutX="346.0" layoutY="28.0" mnemonicParsing="false" onAction="#doSearch" text="Search" />
+      <DatePicker fx:id="dateofbirth" layoutX="141.0" layoutY="208.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="52.0" layoutY="212.0" text="Date Of Birth" />
+      <ImageView fitHeight="140.0" fitWidth="171.0" layoutX="300.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2021-08-26.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="findproperty.FindPropertyViewController">
+   <children>
+      <Label layoutX="174.0" layoutY="14.0" prefHeight="26.0" prefWidth="242.0" text="DEALS MATURED AREA" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="84.0" prefHeight="26.0" prefWidth="210.0" text="REGISTERATIONS STATUS:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radpending" layoutX="256.0" layoutY="89.0" mnemonicParsing="false" onAction="#dopending" text="PENDING" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="grp1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="raddone" layoutX="373.0" layoutY="87.0" mnemonicParsing="false" onAction="#dodone" text="DONE" textFill="#bf2828" toggleGroup="$grp1">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radall" layoutX="463.0" layoutY="87.0" mnemonicParsing="false" onAction="#doall" text="ALL" textFill="#bf2828" toggleGroup="$grp1">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="30.0" layoutY="192.0" prefHeight="26.0" prefWidth="204.0" text="REGISTERATIONS AFTER:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="422.0" layoutY="191.0" mnemonicParsing="false" onAction="#doshow" prefHeight="28.0" prefWidth="82.0" text="SHOW" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="22.0" layoutY="147.0" prefHeight="8.0" prefWidth="546.0" />
+      <TableView fx:id="tblshowall" layoutX="27.0" layoutY="278.0" prefHeight="295.0" prefWidth="546.0" />
+      <DatePicker fx:id="date1" layoutX="237.0" layoutY="192.0" />
+   </children>
+</AnchorPane>

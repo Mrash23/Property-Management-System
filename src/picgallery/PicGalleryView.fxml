@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="picgallery.PicGalleryViewController">
+   <children>
+      <Label layoutX="272.0" layoutY="14.0" />
+      <Label layoutX="228.0" layoutY="18.0" prefHeight="26.0" prefWidth="142.0" text="PIC GALLERY" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="87.0" text="PROPERTY ID:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combopropertyid" editable="true" layoutX="163.0" layoutY="83.0" prefHeight="26.0" prefWidth="185.0" />
+      <Button layoutX="408.0" layoutY="82.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="28.0" prefWidth="81.0" text="FETCH " textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="img2" fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img3" fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img4" fitHeight="113.0" fitWidth="200.0" layoutX="256.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img1" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="93.0" layoutY="286.0" mnemonicParsing="false" onAction="#dopic1" prefHeight="28.0" prefWidth="81.0" text="PIC 1" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="299.0" layoutY="292.0" mnemonicParsing="false" onAction="#dopic2" prefHeight="28.0" prefWidth="81.0" text="PIC 2" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="93.0" layoutY="523.0" mnemonicParsing="false" onAction="#dopic3" prefHeight="28.0" prefWidth="81.0" text="PIC 3" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="299.0" layoutY="523.0" mnemonicParsing="false" onAction="#dopic4" prefHeight="28.0" prefWidth="81.0" text="PIC 4" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="490.0" layoutY="292.0" mnemonicParsing="false" onAction="#dosave" prefHeight="28.0" prefWidth="81.0" text="SAVE" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="461.0" layoutY="330.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="28.0" prefWidth="110.0" text="UPDATE" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

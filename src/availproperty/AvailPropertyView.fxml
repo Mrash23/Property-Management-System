@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="availproperty.AvailPropertyViewController">
+   <children>
+      <Label layoutX="139.0" layoutY="14.0" text="AVAIL PROPERTY FOR SALE" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="82.0" text="PROPERTY ID:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpeopid" layoutX="120.0" layoutY="77.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="10.0" layoutY="134.0" text="CUSTOMER ID\CONTACT NO.:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcontact" layoutX="14.0" layoutY="152.0" prefHeight="26.0" prefWidth="212.0" />
+      <Label layoutX="14.0" layoutY="206.0" text="PROPERTY TYPE:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboproptype" editable="true" layoutX="14.0" layoutY="223.0" prefWidth="150.0" />
+      <Label layoutX="214.0" layoutY="206.0" text="SIZE(in Sq. Yards):" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsize" layoutX="214.0" layoutY="222.0" prefHeight="26.0" prefWidth="118.0" />
+      <ImageView fx:id="imgpicc" fitHeight="144.0" fitWidth="157.0" layoutX="371.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/Screenshots/Screenshot%20(13).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="403.0" layoutY="222.0" mnemonicParsing="false" onAction="#dobrowse2" text="BROWSE" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="9.0" layoutY="286.0" prefHeight="0.0" prefWidth="586.0" />
+      <Label layoutX="240.0" layoutY="300.0" text="DIMENSIONS" textFill="#bf2828" underline="true">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="336.0" text="WIDTH:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtwidth" layoutX="14.0" layoutY="360.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="147.0" layoutY="336.0" text="DEPTH:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtdepth" layoutX="147.0" layoutY="360.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="292.0" layoutY="336.0" text="LEFT-SIDE:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtleftside" layoutX="293.0" layoutY="360.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="450.0" layoutY="336.0" text="RIGHT-SIDE:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtrightside" layoutX="444.0" layoutY="360.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="14.0" layoutY="404.0" text="PROPERTY LOCATION:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtlocation" layoutX="14.0" layoutY="429.0" prefHeight="26.0" prefWidth="212.0" />
+      <Label layoutX="253.0" layoutY="404.0" text="CITY:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcity2" layoutX="249.0" layoutY="431.0" prefHeight="26.0" prefWidth="105.0" />
+      <Label layoutX="370.0" layoutY="404.0" text="AMOUNT DEMANDED:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtamountdemand" layoutX="370.0" layoutY="431.0" prefHeight="26.0" prefWidth="179.0" />
+      <Label layoutX="14.0" layoutY="472.0" text="OTHER DETAILS:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtorderdetails" layoutX="14.0" layoutY="500.0" prefHeight="26.0" prefWidth="538.0" />
+      <Label layoutX="253.0" layoutY="472.0" text="DIRECTION:" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combodirection" editable="true" layoutX="374.0" layoutY="468.0" prefHeight="26.0" prefWidth="179.0" />
+      <Button layoutX="65.0" layoutY="546.0" mnemonicParsing="false" onAction="#dosaveinfo" text="SAVE INFO" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="234.0" layoutY="546.0" mnemonicParsing="false" onAction="#domodify2" text="MODIFY" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="382.0" layoutY="546.0" mnemonicParsing="false" onAction="#dodeleteproperty" text="DELETE PROPERTY" textFill="#bf2828">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
