@@ -1,0 +1,10 @@
+Decription -> 
+A desktop application made to manage property and maintain a proper records of available/sold property with images and details and also data of
+buyer and seller. A system to help real estate agents to work more efficiently.
+
+Softwares/Tools used->
+1. Eclipse IDE
+2. JavaFX (JavaFX SDK)
+3. e(fx)clipse plugin from Eclipse marketplace
+4. mysql-connector.jar file
+5. XAMMP Server
