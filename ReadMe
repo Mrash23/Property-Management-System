@@ -6,5 +6,6 @@ Softwares/Tools used->
 1. Eclipse IDE
 2. JavaFX (JavaFX SDK)
 3. e(fx)clipse plugin from Eclipse marketplace
-4. mysql-connector.jar file
-5. XAMMP Server
+4. Scene Builder to create UI/UX of pages.
+5. mysql-connector.jar file
+6. XAMMP Server
